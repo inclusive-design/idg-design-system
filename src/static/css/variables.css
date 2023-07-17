@@ -1,0 +1,18 @@
+:root {
+    /* Colors */
+    --color-blue-100: hsl(234, 100%, 96%);
+    --color-blue-500: hsl(234, 62%, 51%);
+    --color-blue-700: hsl(234, 61%, 33%);
+    --color-green-100: hsl(170, 37%, 97%);
+    --color-green-300: hsl(170, 54%, 89%);
+    --color-green-500: hsl(175, 71%, 69%);
+    --color-green-700: hsl(175, 80%, 16%);
+    --color-red-100: hsl(0, 100%, 97%);
+    --color-red-500: hsl(0, 89%, 69%);
+    --color-orange-100: hsl(40, 100%, 97%);
+    --color-orange-500: hsl(40, 100%, 49%);
+
+    /* Fonts */
+    --font-sans: Martel;
+    --font-serif: Mulish;
+}
