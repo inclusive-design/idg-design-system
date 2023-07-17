@@ -1,0 +1,19 @@
+{
+  "name": "idg-design-system",
+  "version": "1.0.0",
+  "description": "Design system for the Inclusive Design Guide.",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "dev": "eleventy --serve --quiet",
+    "build": "eleventy"
+  },
+  "keywords": ["atomic design", "design tokens", "design system", "eleventy"],
+  "author": "OCAD University <idrc@ocadu.ca>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@11ty/eleventy": "2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "5.0.0",
+    "html-prettify": "1.0.7",
+    "require-glob": "4.1.0"
+  }
+}
