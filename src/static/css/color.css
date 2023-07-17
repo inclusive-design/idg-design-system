@@ -1,0 +1,43 @@
+.background-blue-100 {
+    background-color: var(--color-blue-100);
+}
+
+.background-blue-500 {
+    background-color: var(--color-blue-500);
+}
+
+.background-blue-700 {
+    background-color: var(--color-blue-700);
+}
+
+.background-green-100 {
+    background-color: var(--color-green-100);
+}
+
+.background-green-300 {
+    background-color: var(--color-green-300);
+}
+
+.background-green-500 {
+    background-color: var(--color-green-500);
+}
+
+.background-green-700 {
+    background-color: var(--color-green-700);
+}
+
+.background-red-100 {
+    background-color: var(--color-red-100);
+}
+
+.background-red-500 {
+    background-color: var(--color-red-500);
+}
+
+.background-orange-100 {
+    background-color: var(--color-orange-100);
+}
+
+.background-orange-500 {
+    background-color: var(--color-orange-500);
+}

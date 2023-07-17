@@ -1,18 +1,118 @@
 :root {
     /* Colors */
-    --color-blue-100: hsl(234, 100%, 96%);
-    --color-blue-500: hsl(234, 62%, 51%);
-    --color-blue-700: hsl(234, 61%, 33%);
-    --color-green-100: hsl(170, 37%, 97%);
-    --color-green-300: hsl(170, 54%, 89%);
-    --color-green-500: hsl(175, 71%, 69%);
-    --color-green-700: hsl(175, 80%, 16%);
-    --color-red-100: hsl(0, 100%, 97%);
-    --color-red-500: hsl(0, 89%, 69%);
-    --color-orange-100: hsl(40, 100%, 97%);
-    --color-orange-500: hsl(40, 100%, 49%);
+    --color-blue-100-hsl: 234, 100%, 96%;
+    --color-blue-100: hsl(var(--color-blue-100-hsl));
+    --color-blue-500-hsl: 234, 62%, 51%;
+    --color-blue-500: hsl(var(--color-blue-500-hsl));
+    --color-blue-700-hsl: 234, 61%, 33%;
+    --color-blue-700: hsl(var(--color-blue-700-hsl));
+    --color-green-100-hsl: 170, 37%, 97%;
+    --color-green-100: hsl(var(--color-green-100-hsl));
+    --color-green-300-hsl: 170, 54%, 89%;
+    --color-green-300: hsl(var(--color-green-300-hsl));
+    --color-green-500-hsl: 175, 71%, 69%;
+    --color-green-500: hsl(var(--color-green-500-hsl));
+    --color-green-700-hsl: 175, 80%, 16%;
+    --color-green-700: hsl(var(--color-green-700-hsl));
+    --color-red-100-hsl: 0, 100%, 97%;
+    --color-red-100: hsl(var(--color-red-100-hsl));
+    --color-red-500-hsl: 0, 89%, 69%;
+    --color-red-500: hsl(var(--color-red-500-hsl));
+    --color-orange-100-hsl: 40, 100%, 97%;
+    --color-orange-100: hsl(var(--color-orange-100-hsl));
+    --color-orange-500-hsl: 40, 100%, 49%;
+    --color-orange-500: hsl(var(--color-orange-500-hsl));
 
     /* Fonts */
-    --font-sans: Martel;
-    --font-serif: Mulish;
+    --font-sans: Martel, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+    --font-serif: Mulish, Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.border--full {
+    border-radius: 50%;
+}
+
+/* Width */
+
+.width--1 {
+    width: 1rem;
+}
+
+.width--2 {
+    width: 2rem;
+}
+
+.width--3 {
+    width: 3rem;
+}
+
+.width--4 {
+    width: 4rem;
+}
+
+.width--5 {
+    width: 5rem;
+}
+
+.width--6 {
+    width: 6rem;
+}
+
+.width--7 {
+    width: 7rem;
+}
+
+/* Height */
+
+.height--1 {
+    height: 1rem;
+}
+
+.height--2 {
+    height: 2rem;
+}
+
+.height--3 {
+    height: 3rem;
+}
+
+.height--4 {
+    height: 4rem;
+}
+
+.height--5 {
+    height: 5rem;
+}
+
+.height--6 {
+    height: 6rem;
+}
+
+.height--7 {
+    height: 7rem;
+}
+
+/* Flex */
+
+.flex--x {
+    display: flex;
+}
+
+.flex--y {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-align--y {
+    justify-items: center;
+}
+
+/* Gap */
+
+.gap--1 {
+    gap: 1rem;
+}
+
+.gap--2 {
+    gap: 2rem;
 }
