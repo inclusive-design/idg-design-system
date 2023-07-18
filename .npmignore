@@ -1,0 +1,16 @@
+.*.cjs
+.*.js
+.github
+.gitignore
+.husky
+.npmignore
+.nvmrc
+*.config.js
+bin
+dist
+src/_data
+src/_includes
+src/*.md
+src/*.njk
+src/static/*.njk
+src/static/design-system
