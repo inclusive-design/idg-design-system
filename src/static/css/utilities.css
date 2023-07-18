@@ -1,0 +1,44 @@
+/* Border */
+
+.rounded-full {
+    border-radius: 50%;
+}
+
+/* Flex */
+
+.flex-row {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Gap */
+
+.gap-1 {
+    gap: var(--space-s)
+}
+
+.gap-2 {
+    gap: var(--space-m);
+}
+
+/* Height */
+
+.height-7 {
+    height: var(--space-3xl);
+}
+
+/* Margin */
+
+.margin-auto {
+    margin: auto;
+}
+
+/* Width */
+
+.width-7 {
+    width: var(--space-3xl);
+}
