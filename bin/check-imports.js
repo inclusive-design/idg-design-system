@@ -11,7 +11,7 @@ fs.readFile("./src/static/css/main.css", "utf8", (error, data) => {
 
     filenames.forEach(filename => {
         if (filename !== "main.css") {
-            if (!data.includes(filename)) {
+            if (!data.includes(`@import "${filename}";`)) {
                 console.error(chalk.red(`Error: "${filename}" not imported.`));
                 process.exit(1);
             }
