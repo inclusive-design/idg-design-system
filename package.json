@@ -2,15 +2,23 @@
   "name": "idg-design-system",
   "version": "0.0.1",
   "description": "Design system for the Inclusive Design Guide.",
-  "main": "eleventy.config.js",
   "scripts": {
+    "build:dist": "lightningcss --minify --bundle src/static/css/main.css -o main.css",
+    "build": "run-s clean:eleventy eleventy",
+    "check-imports": "node bin/check-imports.js",
+    "clean": "run-s clean:*",
+    "clean:dist": "rimraf main.css",
+    "clean:eleventy": "rimraf dist",
     "dev": "eleventy --serve --quiet",
-    "build": "eleventy",
+    "eleventy": "eleventy",
+    "dist": "run-s clean:dist check-imports build:dist",
     "lint": "run-s lint:*",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:js": "eslint \"**/*.js\"",
     "lint:markdown": "markdownlint-cli2 \"**/*.md\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run dist",
+    "start": "run-s clean:eleventy dev"
   },
   "keywords": [
     "atomic design",
@@ -29,12 +37,16 @@
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
     "@commitlint/config-conventional": "17.6.6",
+    "chalk": "4.1.2",
     "eslint-config-fluid": "2.1.1",
     "husky": "8.0.3",
+    "lightningcss-cli": "1.21.5",
     "lint-staged": "13.2.3",
     "markdownlint-cli2": "0.8.1",
     "markdownlint-config-fluid": "0.1.5",
     "npm-run-all": "4.1.5",
+    "progress": "2.0.3",
+    "rimraf": "5.0.1",
     "stylelint-config-fluid": "1.0.0"
   },
   "lint-staged": {
