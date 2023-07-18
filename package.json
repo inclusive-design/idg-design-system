@@ -1,6 +1,6 @@
 {
   "name": "idg-design-system",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Design system for the Inclusive Design Guide.",
   "main": "eleventy.config.js",
   "scripts": {
