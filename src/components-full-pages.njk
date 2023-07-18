@@ -5,11 +5,11 @@ pagination:
     alias: component
 permalink: "components/full/{{ component.slug }}/"
 title: 'Components'
-renderData:
-  title: "{{ component.title }}"
 ---
 
 {% extends "layout.njk" %}
+
+{% set renderData = {title: component.title} %}
 
 {% block inner %}
   {% set comp %}

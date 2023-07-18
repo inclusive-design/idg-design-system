@@ -14,6 +14,8 @@ renderData:
 
 {% from "design-system/component.njk" import code, context %}
 
+{% set renderData = {title: component.title} %}
+
 {% block content %}
   <seven-minute-tabs class="ds-stretch">
     <ol role="tablist" class="ds-tabs" aria-label="What does this tab chooser do?">
