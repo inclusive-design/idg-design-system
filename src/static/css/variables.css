@@ -1,0 +1,83 @@
+:root {
+    /* Colors */
+    --color-blue-100-hsl: 234, 100%, 96%;
+    --color-blue-100: hsl(var(--color-blue-100-hsl));
+    --color-blue-500-hsl: 234, 62%, 51%;
+    --color-blue-500: hsl(var(--color-blue-500-hsl));
+    --color-blue-700-hsl: 234, 61%, 33%;
+    --color-blue-700: hsl(var(--color-blue-700-hsl));
+    --color-green-100-hsl: 170, 37%, 97%;
+    --color-green-100: hsl(var(--color-green-100-hsl));
+    --color-green-300-hsl: 170, 54%, 89%;
+    --color-green-300: hsl(var(--color-green-300-hsl));
+    --color-green-500-hsl: 175, 71%, 69%;
+    --color-green-500: hsl(var(--color-green-500-hsl));
+    --color-green-700-hsl: 175, 80%, 16%;
+    --color-green-700: hsl(var(--color-green-700-hsl));
+    --color-red-100-hsl: 0, 100%, 97%;
+    --color-red-100: hsl(var(--color-red-100-hsl));
+    --color-red-500-hsl: 0, 89%, 69%;
+    --color-red-500: hsl(var(--color-red-500-hsl));
+    --color-orange-100-hsl: 40, 100%, 97%;
+    --color-orange-100: hsl(var(--color-orange-100-hsl));
+    --color-orange-500-hsl: 40, 100%, 49%;
+    --color-orange-500: hsl(var(--color-orange-500-hsl));
+
+    /* Fonts */
+    --font-sans:
+        martel,
+        -apple-system,
+        blinkmacsystemfont,
+        avenir next,
+        avenir,
+        segoe ui,
+        helvetica neue,
+        helvetica,
+        cantarell,
+        ubuntu,
+        roboto,
+        noto,
+        arial,
+        sans-serif;
+    --font-serif:
+        mulish,
+        iowan old style,
+        apple garamond,
+        baskerville,
+        times new roman,
+        droid serif,
+        times,
+        source serif pro,
+        apple color emoji,
+        segoe ui emoji,
+        segoe ui symbol;
+
+    /* @link https://utopia.fyi/space/calculator?
+        c=320,18,1.2,1240,20,1.25,5,2,&
+        s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&
+        g=s,l,xl,12 */
+
+    /* Spacings */
+    --space-3xs: clamp(0.31rem, calc(0.31rem + 0vw), 0.31rem);
+    --space-2xs: clamp(0.56rem, calc(0.54rem + 0.11vw), 0.63rem);
+    --space-xs: clamp(0.88rem, calc(0.85rem + 0.11vw), 0.94rem);
+    --space-s: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+    --space-m: clamp(1.69rem, calc(1.62rem + 0.33vw), 1.88rem);
+    --space-l: clamp(2.25rem, calc(2.16rem + 0.43vw), 2.5rem);
+    --space-xl: clamp(3.38rem, calc(3.24rem + 0.65vw), 3.75rem);
+    --space-2xl: clamp(4.5rem, calc(4.33rem + 0.87vw), 5rem);
+    --space-3xl: clamp(6.75rem, calc(6.49rem + 1.3vw), 7.5rem);
+
+    /* One-up pairs */
+    --space-3xs-2xs: clamp(0.31rem, calc(0.2rem + 0.54vw), 0.63rem);
+    --space-2xs-xs: clamp(0.56rem, calc(0.43rem + 0.65vw), 0.94rem);
+    --space-xs-s: clamp(0.88rem, calc(0.74rem + 0.65vw), 1.25rem);
+    --space-s-m: clamp(1.13rem, calc(0.86rem + 1.3vw), 1.88rem);
+    --space-m-l: clamp(1.69rem, calc(1.4rem + 1.41vw), 2.5rem);
+    --space-l-xl: clamp(2.25rem, calc(1.73rem + 2.61vw), 3.75rem);
+    --space-xl-2xl: clamp(3.38rem, calc(2.81rem + 2.83vw), 5rem);
+    --space-2xl-3xl: clamp(4.5rem, calc(3.46rem + 5.22vw), 7.5rem);
+
+    /* Custom pairs */
+    --space-s-l: clamp(1.13rem, calc(0.65rem + 2.39vw), 2.5rem);
+}
