@@ -1,9 +1,19 @@
 # Inclusive Design Guide Design System
 
+To run the design system microsite in local development mode:
+
 ```bash
-npm run dev
+npm start
+```
 
-# Or
+To build a static copy of the design system microsite, found at `./dist/`:
 
+```bash
 npm run build
+```
+
+To build the main CSS file, found at `./main.css`:
+
+```bash
+npm run dist
 ```
