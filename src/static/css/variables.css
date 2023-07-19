@@ -49,7 +49,7 @@
         arial,
         sans-serif;
     --font-sans:
-        martel,
+        mulish,
         -apple-system,
         blinkmacsystemfont,
         avenir next,
@@ -64,7 +64,7 @@
         arial,
         sans-serif;
     --font-serif:
-        mulish,
+        martel,
         iowan old style,
         apple garamond,
         baskerville,
@@ -74,7 +74,8 @@
         source serif pro,
         apple color emoji,
         segoe ui emoji,
-        segoe ui symbol;
+        segoe ui symbol
+        serif;
 
     /* @link https://utopia.fyi/space/calculator?
         c=320,18,1.2,1240,20,1.25,5,2,&
@@ -105,13 +106,54 @@
     /* Custom pairs */
     --space-s-l: clamp(1.13rem, calc(0.65rem + 2.39vw), 2.5rem);
 
-    /* Type scales */
-    --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.8rem);
-    --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1rem);
-    --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
-    --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
-    --step-2: clamp(1.62rem, calc(1.5rem + 0.58vw), 1.95rem);
-    --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
-    --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
-    --step-5: clamp(2.8rem, calc(2.45rem + 1.77vw), 3.82rem);
+    /* Custom type scales */
+    --fluid-min-width: 320;
+    --fluid-max-width: 1240;
+    --fluid-screen: 100vw;
+    --fluid-bp:
+        calc(
+            (var(--fluid-screen) - var(--fluid-min-width) / 16 * 1rem) /
+            (var(--fluid-max-width) - var(--fluid-min-width))
+        );
+    --f--1-min: 12.4444;
+    --f--1-max: 14;
+    --step--1:
+        calc(
+            ((var(--f--1-min) / 16) * 1rem) + (var(--f--1-max) - var(--f--1-min)) *
+            var(--fluid-bp)
+        );
+    --f-0-min: 16;
+    --f-0-max: 18;
+    --step-0:
+        calc(
+            ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
+            var(--fluid-bp)
+        );
+    --f-1-min: 28.4444;
+    --f-1-max: 32;
+    --step-1:
+        calc(
+            ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
+            var(--fluid-bp)
+        );
+    --f-2-min: 46.2222;
+    --f-2-max: 52;
+    --step-2:
+        calc(
+            ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
+            var(--fluid-bp)
+        );
+    --f-3-min: 78.2222;
+    --f-3-max: 88;
+    --step-3:
+        calc(
+            ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+            var(--fluid-bp)
+        );
+}
+
+@media screen and (min-width: 1240px) {
+    :root {
+        --fluid-screen: calc(var(--fluid-max-width) * 1px);
+    }
 }

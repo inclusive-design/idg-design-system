@@ -3,25 +3,25 @@
     {% for type, value in params.examples %}
         {% if type === 'h1' %}
             <div>{{ type }}</div>
-            <h1 class='mulish-800'>{{ value }}</h1>
+            <h1>{{ value }}</h1>
         {% elif type === 'h2' %}
             <div>{{ type }}</div>
-            <h2 class='mulish-800'>{{ value }}</h2>
+            <h2>{{ value }}</h2>
         {% elif type === 'h3_serif' %}
             <div>h3 serif<br>used for paragraphs</div>
-            <h2 class='martel-700'>{{ value }}</h2>
+            <h3>{{ value }}</h3>
         {% elif type === 'h3_sans' %}
             <div>h3 sans serif<br>used for cards</div>
-            <h2 class='mulish-800'>{{ value }}</h2>
+            <div class="card"><h3>{{ value }}</h3></div>
         {% elif type === 'h4' %}
             <div>{{ type }}</div>
-            <h4 class='martel-800'>{{ value }}</h4>
+            <h4>{{ value }}</h4>
         {% elif type === 'body' %}
             <div>{{ type }}</div>
-            <p class='mulish-400'>{{ value }}</p>
+            <p>{{ value }}</p>
         {% elif type === 'Links' %}
             <div>{{ type }}</div>
-            <a href='' class='mulish-800'>{{ value }}</a>
+            <a href='' >{{ value }}</a>
         {% endif %}
     {% endfor %}
 </div>
