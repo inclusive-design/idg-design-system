@@ -6,7 +6,7 @@ module.exports = {
             "blue-600",
             "blue-700",
             "green-100",
-            "green-200",
+            "green-300",
             "green-500",
             "green-600",
             "green-700",
