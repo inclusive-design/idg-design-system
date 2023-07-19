@@ -1,27 +1,11 @@
-<h2>Typestack</h2>
-<div class='grid grid-cols-2-max-fr items-center gap-m'>
-    {% for type, value in params.examples %}
-        {% if type === 'h1' %}
-            <div>{{ type }}</div>
-            <h1>{{ value }}</h1>
-        {% elif type === 'h2' %}
-            <div>{{ type }}</div>
-            <h2>{{ value }}</h2>
-        {% elif type === 'h3_serif' %}
-            <div>h3 serif<br>used for paragraphs</div>
-            <h3>{{ value }}</h3>
-        {% elif type === 'h3_sans' %}
-            <div>h3 sans serif<br>used for cards</div>
-            <div class="card"><h3>{{ value }}</h3></div>
-        {% elif type === 'h4' %}
-            <div>{{ type }}</div>
-            <h4>{{ value }}</h4>
-        {% elif type === 'body' %}
-            <div>{{ type }}</div>
-            <p>{{ value }}</p>
-        {% elif type === 'Links' %}
-            <div>{{ type }}</div>
-            <a href='' >{{ value }}</a>
-        {% endif %}
-    {% endfor %}
+{% block head %}
+    <link rel="stylesheet" href="/static/css/typestack.css" />
+{% endblock %}
+
+{% if params.variantClass %}
+<div class="{{ params.variantClass }}">
+    <{{ params.level }}>{{ params.text }}</{{ params.level }}>
 </div>
+{% else %}
+    <{{ params.level }}>{{ params.text }}</{{ params.level }}>
+{% endif %}
