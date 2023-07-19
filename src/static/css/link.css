@@ -1,5 +1,6 @@
 a {
-    /* TODO */
+    color: var(--color-blue-600);
+    text-decoration: underline;
 }
 
 a[rel="external"] {

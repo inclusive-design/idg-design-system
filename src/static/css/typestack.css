@@ -1,0 +1,19 @@
+.martel-700 {
+    font-family: Martel, var(--font-sans);
+    font-weight: 700;
+}
+
+.martel-800 {
+    font-family: Martel, var(--font-sans);
+    font-weight: 800;
+}
+
+.mulish-400 {
+    font-family: Mulish, var(--font-serif);
+    font-weight: 400;
+}
+
+.mulish-800 {
+    font-family: Mulish, var(--font-serif);
+    font-weight: 800;
+}
