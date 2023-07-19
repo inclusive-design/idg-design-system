@@ -1,6 +1,7 @@
 module.exports = {
     title: "Typestack",
     context: {
+        level: "h1",
         text: "Typestack"
     },
     variants: [

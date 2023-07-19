@@ -1,7 +1,8 @@
 @import "reset.css";
 @import "variables.css";
+@import "font.css";
 @import "utilities.css";
 @import "color.css";
 @import "link.css";
-@import "font.css";
 @import "typestack.css";
+@import "badge.css";
