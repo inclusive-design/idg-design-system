@@ -23,10 +23,6 @@
     display: grid;
 }
 
-.grid-cols-2-max-fr {
-    grid-template-columns: max-content 1fr;
-}
-
 /* Gap */
 .gap-s {
     gap: var(--space-s);
