@@ -13,6 +13,11 @@
     flex-direction: column;
 }
 
+/* Flex/Grid alignments */
+.items-center {
+    align-items: center;
+}
+
 /* Gap */
 .gap-s {
     gap: var(--space-s);
