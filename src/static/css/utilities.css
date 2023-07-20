@@ -34,8 +34,7 @@
 
 /* Margin */
 .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
 }
 
 /* Width */
