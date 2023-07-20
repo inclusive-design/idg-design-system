@@ -2,7 +2,7 @@ module.exports = {
     title: "Typography",
     context: {
         level: "p",
-        text: "Typography"
+        text: "It is the responsibility of inclusive designers to be aware of the context and broader impact of any design and strive to effect a beneficial impact beyond the intended beneficiary of the design."
     },
     variants: [
         {
