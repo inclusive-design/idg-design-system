@@ -7,6 +7,14 @@ body {
     min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-block: 0;
+}
+
 blockquote,
 pre,
 ol,

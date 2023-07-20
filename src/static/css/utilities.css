@@ -34,8 +34,7 @@
 
 /* Margin */
 .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
 }
 
 /* Prose */
@@ -47,4 +46,15 @@
 /* Width */
 .width-3xl {
     width: var(--space-3xl);
+}
+
+/* Prose */
+.prose {
+    inline-size: 100%;
+    max-inline-size: 65ch;
+}
+
+/* Flow */
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
 }
