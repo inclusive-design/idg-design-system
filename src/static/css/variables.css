@@ -33,6 +33,13 @@
     --color-black-hsl: 0, 0%, 0%;
     --color-black: hsl(var(--color-black-hsl));
 
+    /* Link */
+    --link-color: var(--color-blue-600);
+    --link-active-color: var(--color-blue-600);
+    --link-active-color-bg: var(--color-blue-100);
+    --link-focus-color: var(--color-blue-700);
+    --link-hover-color: var(--color-blue-700);
+
     /* Fonts */
     --font-system:
         -apple-system,
