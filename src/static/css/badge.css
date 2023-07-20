@@ -4,7 +4,8 @@
     display: inline-block;
     font-family: var(--font-serif);
     font-weight: 800;
-    padding: var(--space-m) var(--space-l);
+    padding-block: var(--space-m);
+    padding-inline: var(--space-l);
 }
 
 .badge--insight {
