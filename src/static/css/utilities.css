@@ -37,10 +37,9 @@
     margin-inline: auto;
 }
 
-/* Prose */
-.prose {
-    inline-size: 100%;
-    max-inline-size: 65ch;
+/* Padding */
+.p-m {
+    padding: var(--space-m);
 }
 
 /* Width */
