@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Design system for the Inclusive Design Guide.",
   "scripts": {
-    "build:dist": "lightningcss --minify --bundle src/static/css/main.css -o main.css",
+    "build:dist": "lightningcss --minify --bundle --targets '>= 0.25%' src/static/css/main.css -o main.css",
     "build": "run-s clean:eleventy eleventy",
     "check-imports": "node bin/check-imports.js",
     "clean": "run-s clean:*",
