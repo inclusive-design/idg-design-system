@@ -1,16 +1,15 @@
-.link-container {
-    padding: 2rem;
-    width: min-content;
-}
-
 a {
     color: var(--fl-linkColor, var(--link-color));
     text-decoration: underline;
 }
 
+a:hover {
+    color: var(--fl-linkColor, var(--link-hover-color));
+}
+
 a:active {
-    background: var(--fl-bgColor, var(--link-active-color-bg));
-    box-shadow: 0 0 0 0.3em var(--fl-bgColor, var(--link-active-color-bg));
+    background: var(--fl-bgColor, var(--link-active-bg));
+    box-shadow: 0 0 0 0.3em var(--fl-bgColor, var(--link-active-bg));
     color: var(--fl-linkColor, var(--link-active-color));
 }
 
@@ -21,21 +20,17 @@ a:focus {
     outline-width: 3px;
 }
 
-a:hover {
-    color: var(--fl-linkColor, var(--link-hover-color));
-}
-
 .bg-green-500 a {
-    --link-active-color: var(--color-green-700);
-    --link-active-color-bg: var(--color-green-500);
-    --link-color: var(--color-green-700);
+    --link-active-color: var(--color-green-800);
+    --link-active-bg: var(--color-green-300);
+    --link-color: var(--color-green-800);
     --link-focus-color: var(--color-black);
     --link-hover-color: var(--color-black);
 }
 
-.bg-green-700 a {
+.bg-green-800 a {
     --link-active-color: var(--color-green-100);
-    --link-active-color-bg: #085852;
+    --link-active-bg: var(--color-green-700);
     --link-color: var(--color-green-100);
     --link-focus-color: var(--color-green-500);
     --link-hover-color: var(--color-green-500);

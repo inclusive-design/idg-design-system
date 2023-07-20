@@ -14,8 +14,10 @@
     --color-green-500: hsl(var(--color-green-500-hsl));
     --color-green-600-hsl: 165, 54%, 59%;
     --color-green-600: hsl(var(--color-green-600-hsl));
-    --color-green-700-hsl: 175, 80%, 16%;
+    --color-green-700-hsl: 175, 76%, 23%;
     --color-green-700: hsl(var(--color-green-700-hsl));
+    --color-green-800-hsl: 175, 80%, 16%;
+    --color-green-800: hsl(var(--color-green-800-hsl));
     --color-red-100-hsl: 0, 100%, 97%;
     --color-red-100: hsl(var(--color-red-100-hsl));
     --color-red-500-hsl: 4, 97%, 69%;
@@ -36,7 +38,7 @@
     /* Link */
     --link-color: var(--color-blue-600);
     --link-active-color: var(--color-blue-600);
-    --link-active-color-bg: var(--color-blue-100);
+    --link-active-bg: var(--color-blue-100);
     --link-focus-color: var(--color-blue-700);
     --link-hover-color: var(--color-blue-700);
 

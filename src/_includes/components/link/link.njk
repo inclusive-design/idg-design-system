@@ -3,6 +3,6 @@
 {% endblock %}
 
 
-<div {% if params.variantClass %} class="link-container {{ params.variantClass }}" {% endif %}>
+<div class="prose{% if params.variantClass %} {{ params.variantClass }} {% endif %}">
     <a href="#">{{ params.text }}</a>
 </div>

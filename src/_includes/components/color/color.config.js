@@ -10,6 +10,7 @@ module.exports = {
             "green-500",
             "green-600",
             "green-700",
+            "green-800",
             "red-100",
             "red-500",
             "red-600",
