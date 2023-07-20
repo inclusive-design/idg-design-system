@@ -41,3 +41,14 @@
 .width-3xl {
     width: var(--space-3xl);
 }
+
+/* Prose */
+.prose {
+    inline-size: 100%;
+    max-inline-size: 65ch;
+}
+
+/* Flow */
+.flow > * + * {
+    margin-block-start: var(--flow-space, 1em);
+}
