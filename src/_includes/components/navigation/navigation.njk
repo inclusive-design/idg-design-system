@@ -1,0 +1,13 @@
+<nav aria-labelledby="navigation">
+    <h2 id="navigation" class="visually-hidden">Navigation</h2>
+    <ul role="list">
+        <li>
+            <a rel="home" href="/">Inclusive Design Guide</a>
+        </li>
+        {% for item in params.items %}
+        <li>
+            <a class="--{{ item.title | slugify }}" href="#{{ item.title | slugify }}"{% if item.current %} aria-current="page"{% endif %}>{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
