@@ -43,20 +43,6 @@
     --link-hover-color: var(--color-blue-700);
 
     /* Fonts */
-    --font-system:
-        -apple-system,
-        blinkmacsystemfont,
-        avenir next,
-        avenir,
-        segoe ui,
-        helvetica neue,
-        helvetica,
-        cantarell,
-        ubuntu,
-        roboto,
-        noto,
-        arial,
-        sans-serif;
     --font-sans:
         mulish,
         -apple-system,

@@ -27,14 +27,6 @@ module.exports = {
             }
         },
         {
-            title: "Header Level 3 (Card)",
-            context: {
-                level: "h3",
-                variantClass: "card",
-                text: "Recognize diversity and uniqueness"
-            }
-        },
-        {
             title: "Header Level 4",
             context: {
                 level: "h4",
