@@ -1,0 +1,4 @@
+hr {
+    background: var(--fl-fgColor, var(--color-green-700));
+    display: block;
+}
