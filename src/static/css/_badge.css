@@ -1,6 +1,6 @@
 .badge {
     background-color: var(--fl-bgColor, var(--color-black));
-    border: solid 1px var(--fl-fgColor, transparent);
+    border: solid 0.0625rem var(--fl-fgColor, transparent);
     color: var(--fl-fgColor, var(--color-white));
     display: inline-block;
     font-family: var(--font-serif);
