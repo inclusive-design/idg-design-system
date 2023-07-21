@@ -5,12 +5,6 @@ module.exports = {
     },
     variants: [
         {
-            title: "White background",
-            context: {
-                text: "Previous"
-            }
-        },
-        {
             title: "Green 800 background",
             context: {
                 variantClass: "bg-green-800",

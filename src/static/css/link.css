@@ -9,15 +9,14 @@ a:hover {
 
 a:active {
     background: var(--fl-bgColor, var(--link-active-bg));
-    box-shadow: 0 0 0 0.3em var(--fl-bgColor, var(--link-active-bg));
+    box-shadow: 0 0 0 0.3rem var(--fl-bgColor, var(--link-active-bg));
     color: var(--fl-linkColor, var(--link-active-color));
 }
 
 a:focus {
     color: var(--fl-linkColor, var(--link-focus-color));
-    outline: 3px solid var(--fl-linkColor, var(--link-focus-color));
-    outline-offset: 6px;
-    outline-width: 3px;
+    outline: 0.2rem solid var(--fl-linkColor, var(--link-focus-color));
+    outline-offset: 0.3rem;
 }
 
 .bg-green-500 a {
