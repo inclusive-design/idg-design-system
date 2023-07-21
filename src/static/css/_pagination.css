@@ -6,8 +6,17 @@
     font-family: var(--font-sans);
     font-weight: 800;
     justify-content: space-between;
-    min-width: 20rem;
     padding: var(--space-m);
+    width: 20rem;
+}
+
+.pagination svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.pagination-previous svg {
+    transform: rotate(180deg);
 }
 
 .pagination-previous:hover {

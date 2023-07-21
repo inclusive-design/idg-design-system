@@ -73,7 +73,7 @@
         serif;
 
     /* Pagination */
-    --pagination-bg: var(--color-white);
+    --pagination-bg: var(--color-blue-100);
     --pagination-border-color: var(--color-blue-600);
     --pagination-color: var(--color-blue-600);
 
