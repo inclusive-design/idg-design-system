@@ -1,1 +1,18 @@
-<a></a>
+{% block head %}
+    <link rel="stylesheet" href="/static/css/pagination.css" />
+{% endblock %}
+<div class="flex-col gap-m">
+    <div>
+        <button class="pagination pagination-previous {{ params.variantClass }}">
+            Previous
+            {% include "../../../static/svg/previous.svg" %}
+        </button>
+    </div>
+
+    <div>
+        <button class="pagination pagination-next {{ params.variantClass }}">
+            Next
+            {% include "../../../static/svg/next.svg" %}
+        </button>
+    </div>
+</div>

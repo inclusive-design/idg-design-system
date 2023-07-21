@@ -1,0 +1,46 @@
+.pagination {
+    background: var(--fl-bgColor, var(--pagination-bg));
+    border-top: 0.2rem solid var(--fl-fgColor, var(--pagination-border-color));
+    color: var(--fl-fgColor, var(--pagination-color));
+    display: flex;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    justify-content: space-between;
+    min-width: 20rem;
+    padding: var(--space-m);
+}
+
+.pagination-previous:hover {
+    background:
+        linear-gradient(
+            269.79deg,
+            var(
+                --fl-bgColor,
+                var(--pagination-bg)
+            ) -0.44%,
+            rgb(236 238 255 / 0%) 99.82%
+        );
+}
+
+.pagination-next:hover {
+    background: linear-gradient(90deg, var(--fl-bgColor, var(--pagination-bg)) 0%, rgb(236 238 255 / 0%) 100%);
+}
+
+.pagination--insight {
+    --pagination-bg: var(--color-blue-100);
+}
+
+.pagination--practice {
+    --pagination-bg: var(--color-green-100);
+    --pagination-border-color: var(--color-green-500);
+}
+
+.pagination--technique {
+    --pagination-bg: var(--color-red-100);
+    --pagination-border-color: var(--color-red-500);
+}
+
+.pagination--activity {
+    --pagination-bg: var(--color-orange-100);
+    --pagination-border-color: var(--color-orange-500);
+}

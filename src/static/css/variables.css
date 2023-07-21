@@ -77,6 +77,11 @@
         segoe ui symbol
         serif;
 
+    /* Pagination */
+    --pagination-bg: var(--color-white);
+    --pagination-border-color: var(--color-blue-600);
+    --pagination-color: var(--color-blue-600);
+
     /* @link https://utopia.fyi/space/calculator?c=
     320,18,1.2,1240,20,1.25,5,2,&s=0.8|0.5|0.2,1.2|1.5|1.8|3.2|6,s-l&g=s,l,xl,12 */
 
