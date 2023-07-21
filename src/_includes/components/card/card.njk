@@ -1,0 +1,15 @@
+<div class="card card--{{ params.variantClass }}">
+    <div class="header">
+        {{ c("badge", {
+            "text": params.badge,
+            "variantClass": "badge--" + params.variantClass
+        }) }}
+        <div>
+            {% include "../../../static/svg/arrow.svg" %}
+        </div>
+    </div>
+    <div class="card__body flow">
+        <h3><a href="#">{{ params.title }}</a></h3>
+        <p>{{ params.intro }}</p>
+    </div>
+</div>

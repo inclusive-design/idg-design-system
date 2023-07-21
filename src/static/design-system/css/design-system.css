@@ -31,6 +31,24 @@
     --space-xl-2xl: clamp(3rem, calc(2.43rem + 2.86vw), 5rem);
     --space-2xl-3xl: clamp(4rem, calc(0.86rem + 15.71vw), 15rem);
     --space-3xl-4xl: clamp(12rem, calc(10.07rem + 9.64vw), 18.75rem);
+
+
+    --font-system:
+        -apple-system,
+        blinkmacsystemfont,
+        avenir next,
+        avenir,
+        segoe ui,
+        helvetica neue,
+        helvetica,
+        cantarell,
+        ubuntu,
+        roboto,
+        noto,
+        arial,
+        sans-serif;
+
+    font-family: var(--font-system);
 }
 
 /* Typography */
