@@ -1,30 +1,31 @@
+.badge,
+.badge--insight {
+    --badge-bg: var(--color-blue-600);
+    --badge-color: var(--color-white);
+}
+
+.badge--practice {
+    --badge-bg: var(--color-green-500);
+    --badge-color: var(--color-black);
+}
+
+.badge--technique {
+    --badge-bg: var(--color-red-500);
+    --badge-color: var(--color-black);
+}
+
+.badge--activity {
+    --badge-bg: var(--color-orange-500);
+    --badge-color: var(--color-black);
+}
+
 .badge {
-    background-color: var(--fl-bgColor, var(--color-black));
-    border: solid 0.0625rem var(--fl-fgColor, transparent);
-    color: var(--fl-fgColor, var(--color-white));
+    background-color: var(--fl-bgColor, var(--badge-bg, var(--color-black)));
+    box-shadow: 0 0 0 0.0625rem var(--fl-fgColor, transparent) inset;
+    color: var(--fl-fgColor, var(--badge-color, var(--color-white)));
     display: inline-block;
     font-family: var(--font-serif);
     font-weight: 800;
     padding-block: var(--space-m);
     padding-inline: var(--space-l);
-}
-
-.badge--insight {
-    background-color: var(--fl-bgColor, var(--color-blue-600));
-    color: var(--fl-fgColor, var(--color-white));
-}
-
-.badge--practice {
-    background-color: var(--fl-bgColor, var(--color-green-500));
-    color: var(--fl-fgColor, var(--color-black));
-}
-
-.badge--technique {
-    background-color: var(--fl-bgColor, var(--color-red-500));
-    color: var(--fl-fgColor, var(--color-black));
-}
-
-.badge--activity {
-    background-color: var(--fl-bgColor, var(--color-orange-500));
-    color: var(--fl-fgColor, var(--color-black));
 }

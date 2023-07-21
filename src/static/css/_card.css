@@ -1,0 +1,147 @@
+.card,
+.card--insight {
+    --card-header-bg: var(--color-blue-100);
+    --card-header-bg-hover: linear-gradient(90deg, var(--color-blue-100) 50%, var(--color-white) 100%);
+    --card-border-hover: var(--color-blue-100);
+    --card-badge-bg-hover: var(--color-blue-700);
+    --card-focus-border: var(--color-blue-600);
+}
+
+.card--technique {
+    --card-header-bg: var(--color-red-100);
+    --card-header-bg-hover: linear-gradient(90deg, var(--color-red-100) 50%, var(--color-white) 100%);
+    --card-border-hover: var(--color-red-100);
+    --card-badge-bg-hover: var(--color-red-600);
+    --card-focus-border: var(--color-red-500);
+}
+
+.card--practice {
+    --card-header-bg: var(--color-green-100);
+    --card-header-bg-hover: linear-gradient(90deg, var(--color-green-100) 50%, var(--color-white) 100%);
+    --card-border-hover: var(--color-green-300);
+    --card-badge-bg-hover: var(--color-green-600);
+    --card-focus-border: var(--color-green-500);
+}
+
+.card--activity {
+    --card-header-bg: var(--color-orange-100);
+    --card-header-bg-hover: linear-gradient(90deg, var(--color-orange-100) 50%, var(--color-white) 100%);
+    --card-border-hover: var(--color-orange-100);
+    --card-badge-bg-hover: var(--color-orange-600);
+    --card-focus-border: var(--color-orange-500);
+}
+
+.card {
+    box-shadow:
+        0 0 0 0.0625rem var(--fl-linkColor, transparent) inset,
+        0 0 calc(10 / 16 * 1rem) 0 rgb(0 0 0 / 15%);
+    color: var(--fl-fgColor, currentColor);
+    inline-size: 100%;
+    max-inline-size: calc(330 / 16 * 1rem);
+    min-block-size: calc(400 / 16 * 1rem);
+    position: relative;
+}
+
+.card .header {
+    align-items: center;
+    background: var(--fl-bgColor, var(--card-header-bg));
+    box-shadow: 0 0 0 0.0625rem var(--fl-linkColor, transparent) inset;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-end: var(--space-m);
+}
+
+.card .badge {
+    box-shadow: 0 0 0 0.0625rem var(--fl-linkColor, transparent) inset;
+}
+
+.card .header svg {
+    color: var(--fl-linkColor, var(--color-blue-600));
+    width: var(--space-s);
+}
+
+.card__body {
+    padding: var(--space-m);
+}
+
+.card h2,
+.card h3 {
+    font-family: var(--font-sans);
+    font-weight: 800;
+}
+
+.card a {
+    color: var(--fl-linkColor, var(--color-green-700));
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: var(--fl-linkColor, var(--color-black));
+}
+
+.card a:active {
+    background-color: inherit;
+    box-shadow: none;
+    outline: 0.2rem solid transparent;
+}
+
+.card a:focus {
+    box-shadow: none;
+    color: var(--fl-linkColor, var(--color-blue-600));
+    outline: 0.2rem solid transparent;
+}
+
+.card a::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 0.0625rem var(--fl-linkColor, var(--card-border-hover)) inset;
+    color: var(--fl-linkColor);
+}
+
+.card:hover .header {
+    background: var(--fl-bgColor, var(--card-header-bg-hover));
+    box-shadow: 0 0 0 0.0625rem var(--fl-linkColor, transparent) inset;
+    color: var(--fl-linkColor);
+}
+
+.card:hover .badge {
+    background-color: var(--fl-bgColor, var(--card-badge-bg-hover));
+    color: var(--fl-linkColor, var(--badge-color));
+}
+
+.card:has(a:active),
+.card:focus-within:has(a:active) {
+    box-shadow:
+        0 0 0 0.0625rem var(--fl-linkColor, var(--color-green-100)) inset,
+        0 0 0 0.125rem var(--fl-linkColor, transparent) inset;
+}
+
+.card:has(a:active) .header,
+.card:focus-within:has(a:active) .header {
+    background-color: var(--fl-bgColor, var(--card-header-bg));
+}
+
+.card:focus-within {
+    box-shadow:
+        0 0 0 0.125rem var(--fl-linkColor, var(--card-focus-border)) inset,
+        0 0 0 0.125rem var(--fl-bgColor, transparent),
+        0 0 0 0.25rem var(--fl-linkColor, transparent);
+    color: var(--fl-linkColor);
+}
+
+.card:focus-within .header {
+    background: inherit;
+    box-shadow: 0 0 0 0.125rem var(--fl-linkColor, transparent) inset;
+}
+
+.card:focus-within .badge {
+    background-color: var(--fl-linkColor, var(--card-badge-bg-hover));
+    color: var(--fl-bgColor, var(--badge-color));
+}
