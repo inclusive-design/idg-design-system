@@ -1,8 +1,8 @@
-@import "reset.css";
-@import "variables.css";
-@import "font.css";
-@import "utilities.css";
-@import "color.css";
-@import "typography.css";
-@import "badge.css";
-@import "link.css";
+@import "_reset.css";
+@import "_variables.css";
+@import "_font.css";
+@import "_utilities.css";
+@import "_color.css";
+@import "_typography.css";
+@import "_badge.css";
+@import "_link.css";

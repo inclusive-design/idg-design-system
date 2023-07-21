@@ -3,7 +3,7 @@ module.exports = {
     "plugins": [
         "stylelint-use-logical-spec"
     ],
-    "ignoreFiles": ["dist/**/*.css", "src/static/design-system/css/*.css", "./main.css"],
+    "ignoreFiles": ["dist/**/*.css", "src/static/design-system/css/*.css"],
     "rules": {
         "custom-property-pattern": null,
         "import-notation": "string",

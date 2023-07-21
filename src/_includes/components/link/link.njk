@@ -1,8 +1,3 @@
-{% block head %}
-    <link rel="stylesheet" href="/static/css/link.css" />
-{% endblock %}
-
-
-<div class="prose p-m{% if params.variantClass %} {{ params.variantClass }} {% endif %}">
+<div class="p-m mx--m {% if params.customBg %} bg-{{ params.customBg }}{% endif %}">
     <a href="#">{{ params.text }}</a>
 </div>
