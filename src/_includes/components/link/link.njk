@@ -1,1 +1,8 @@
-<a href="https://guide.inclusivedesign.ca"{% if params.external %} rel="external"{% endif %}>{{ params.text }}</button>
+{% block head %}
+    <link rel="stylesheet" href="/static/css/link.css" />
+{% endblock %}
+
+
+<div class="prose p-m{% if params.variantClass %} {{ params.variantClass }} {% endif %}">
+    <a href="#">{{ params.text }}</a>
+</div>

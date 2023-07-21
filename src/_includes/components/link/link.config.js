@@ -5,10 +5,17 @@ module.exports = {
     },
     variants: [
         {
-            title: "External",
+            title: "Green 800 background",
             context: {
-                text: "An external link",
-                external: true
+                variantClass: "bg-green-800",
+                text: "Previous"
+            }
+        },
+        {
+            title: "Green 500 background",
+            context: {
+                variantClass: "bg-green-500",
+                text: "Previous"
             }
         }
     ]

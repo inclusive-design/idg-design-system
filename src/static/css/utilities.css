@@ -37,6 +37,11 @@
     margin-inline: auto;
 }
 
+/* Padding */
+.p-m {
+    padding: var(--space-m);
+}
+
 /* Width */
 .width-4xl {
     width: var(--space-4xl);
