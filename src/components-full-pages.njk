@@ -12,8 +12,9 @@ title: 'Components'
 {% set renderData = {title: component.title} %}
 
 {% block inner %}
-  {% set comp %}
-    {{ c(component.name, component.context) }}
-  {% endset %}
-  {% include "design-system/previews/preview-" + component.preview + ".njk" %}
+    {% include "design-system/themes.njk" %}
+    {% set comp %}
+      {{ c(component.name, component.context) }}
+    {% endset %}
+    {% include "design-system/previews/preview-" + component.preview + ".njk" %}
 {% endblock %}

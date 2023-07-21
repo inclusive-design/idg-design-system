@@ -7,14 +7,14 @@ module.exports = {
         {
             title: "Green 800 background",
             context: {
-                variantClass: "bg-green-800",
+                customBg: "green-800",
                 text: "Previous"
             }
         },
         {
             title: "Green 500 background",
             context: {
-                variantClass: "bg-green-500",
+                customBg: "green-500",
                 text: "Previous"
             }
         }
