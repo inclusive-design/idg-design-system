@@ -22,17 +22,34 @@
 .pagination-previous:hover {
     background:
         linear-gradient(
-            269.79deg,
+            270deg,
             var(
                 --fl-bgColor,
                 var(--pagination-bg)
-            ) -0.44%,
-            rgb(236 238 255 / 0%) 99.82%
+            ) 0%,
+            var(--fl-bgColor, var(--color-white)) 100%
         );
 }
 
 .pagination-next:hover {
-    background: linear-gradient(90deg, var(--fl-bgColor, var(--pagination-bg)) 0%, rgb(236 238 255 / 0%) 100%);
+    background:
+        linear-gradient(
+            90deg,
+            var(
+                --fl-bgColor,
+                var(--pagination-bg)
+            ) 0%,
+            var(--fl-bgColor, var(--color-white)) 100%
+        );
+}
+
+.pagination:active {
+    --pagination-bg: var(--color-white);
+}
+
+.pagination:focus {
+    border-block-start: 0.2rem solid transparent;
+    outline: 0.2rem solid var(--fl-linkColor, var(--pagination-color));
 }
 
 .pagination--insight {
