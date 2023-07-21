@@ -7,7 +7,9 @@
 .nvmrc
 *.config.js
 bin
-dist
+dist/components
+dist/index.html
+dist/static/design-system
 src/_data
 src/_includes
 src/*.md

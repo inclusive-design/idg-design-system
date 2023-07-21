@@ -1,6 +1,6 @@
 .pagination {
     background: var(--fl-bgColor, var(--pagination-bg));
-    border-top: 0.2rem solid var(--fl-fgColor, var(--pagination-border-color));
+    border-block-start: 0.2rem solid var(--fl-fgColor, var(--pagination-border-color));
     color: var(--fl-fgColor, var(--pagination-color));
     display: flex;
     font-family: var(--font-sans);

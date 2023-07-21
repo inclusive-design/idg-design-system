@@ -12,7 +12,7 @@ To build a static copy of the design system microsite, found at `./dist/`:
 npm run build
 ```
 
-To build the main CSS file, found at `./main.css`:
+To build the main CSS file, found at `./dist/static/css/main.css`:
 
 ```bash
 npm run dist

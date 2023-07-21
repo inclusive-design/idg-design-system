@@ -1,10 +1,12 @@
 .badge {
     background-color: var(--fl-bgColor, var(--color-black));
+    border: solid 0.0625rem var(--fl-fgColor, transparent);
     color: var(--fl-fgColor, var(--color-white));
     display: inline-block;
     font-family: var(--font-serif);
     font-weight: 800;
-    padding: var(--space-m) var(--space-l);
+    padding-block: var(--space-m);
+    padding-inline: var(--space-l);
 }
 
 .badge--insight {

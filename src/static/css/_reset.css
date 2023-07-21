@@ -1,10 +1,19 @@
 /* Reset */
 body {
+    color: var(--fl-fgColor, var(--color-green-700));
     font-family: var(--font-system, sans-serif);
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     margin: 0;
     min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-block: 0;
 }
 
 blockquote,

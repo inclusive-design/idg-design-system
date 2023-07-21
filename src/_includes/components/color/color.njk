@@ -1,13 +1,9 @@
-{% block head %}
-    <link rel="stylesheet" href="/static/css/color.css" />
-{% endblock %}
-
 <h2>Blue</h2>
 <div class='flex-row gap-m'>
     {% for color in params.colors %}
         {% if 'blue' in color %}
             <div class='flex-col gap-s'>
-                <div class='rounded-full width-3xl height-3xl bg-{{ color }}'></div>
+                <div class='rounded-full width-4xl height-4xl bg-{{ color }}'></div>
                 <div class='mx-auto'>{{ color }}</div>
             </div>
         {% endif %}
@@ -19,7 +15,7 @@
     {% for color in params.colors %}
         {% if 'green' in color %}
             <div class='flex-col gap-s'>
-                <div class='rounded-full width-3xl height-3xl bg-{{ color }}'></div>
+                <div class='rounded-full width-4xl height-4xl bg-{{ color }}'></div>
                 <div class='mx-auto'>{{ color }}</div>
             </div>
         {% endif %}
@@ -31,7 +27,7 @@
     {% for color in params.colors %}
         {% if 'red' in color %}
             <div class='flex-col gap-s'>
-                <div class='rounded-full width-3xl height-3xl bg-{{ color }}'></div>
+                <div class='rounded-full width-4xl height-4xl bg-{{ color }}'></div>
                 <div class='mx-auto'>{{ color }}</div>
             </div>
         {% endif %}
@@ -43,7 +39,7 @@
     {% for color in params.colors %}
         {% if 'orange' in color %}
             <div class='flex-col gap-s'>
-                <div class='rounded-full width-3xl height-3xl bg-{{ color }}'></div>
+                <div class='rounded-full width-4xl height-4xl bg-{{ color }}'></div>
                 <div class='mx-auto'>{{ color }}</div>
             </div>
         {% endif %}
@@ -55,7 +51,7 @@
     {% for color in params.colors %}
         {% if 'black' in color or 'white' in color or 'gray' in color %}
             <div class='flex-col gap-s'>
-                <div class='rounded-full width-3xl height-3xl bg-{{ color }}'></div>
+                <div class='rounded-full width-4xl height-4xl bg-{{ color }}'></div>
                 <div class='mx-auto'>{{ color }}</div>
             </div>
         {% endif %}
