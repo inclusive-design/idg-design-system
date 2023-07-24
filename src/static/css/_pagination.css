@@ -51,7 +51,7 @@
 .pagination:focus {
     border-block-start: 0.2rem solid transparent;
     box-shadow: 0 0 0 0.2rem var(--fl-linkColor, var(--pagination-color)) inset;
-    outline: none;
+    outline: 3px solid transparent;
 }
 
 .pagination--insight {
