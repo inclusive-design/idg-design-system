@@ -1,0 +1,10 @@
+hr {
+    border-block-end-width: 0;
+    border-block-start-width: 0.0625rem;
+    border-color: var(--fl-fgColor, var(--color-green-700));
+    border-inline-end-width: 0;
+    border-inline-start-width: 0;
+    border-style: solid;
+    display: block;
+    margin: 0;
+}
