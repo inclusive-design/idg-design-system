@@ -63,8 +63,23 @@ nav a.--activities {
 }
 
 nav a[rel="home"] {
+    --nav-item-border: var(--color-green-700);
+    --nav-item-hover-bg: var(--color-green-700);
+    --nav-item-hover-color: var(--color-white);
+    --nav-item-active-bg: var(--color-green-300);
+    --nav-logo-color: var(--fl-linkColor, var(--color-green-700));
+    --nav-logo-hover-color: var(--fl-bgColor, var(--nav-item-hover-color));
+
+    align-items: center;
     box-shadow: none;
+    display: flex;
     font-weight: 700;
+    gap: var(--space-2xs);
+    padding: var(--space-2xs);
+}
+
+nav a[rel="home"] svg {
+    width: calc(var(--space-3xs) + var(--space-xl));
 }
 
 nav a[aria-current="page"] {
@@ -77,7 +92,21 @@ nav a:active {
     font-weight: 800;
 }
 
+nav a[rel="home"]:hover,
+nav a[rel="home"]:focus,
+nav a[rel="home"]:active {
+    font-weight: 700;
+}
+
 nav a:hover {
+    background-color: var(--fl-linkColor, var(--nav-item-hover-bg));
+    box-shadow: 0 -0.75rem 0 -0.375rem var(--fl-linkColor, var(--nav-item-border)) inset;
+    color: var(--fl-bgColor, var(--nav-item-hover-color));
+}
+
+nav a[rel="home"]:hover {
+    --nav-logo-color: var(--nav-logo-hover-color);
+
     background-color: var(--fl-linkColor, var(--nav-item-hover-bg));
     box-shadow: 0 -0.75rem 0 -0.375rem var(--fl-linkColor, var(--nav-item-border)) inset;
     color: var(--fl-bgColor, var(--nav-item-hover-color));
@@ -91,9 +120,28 @@ nav a:focus:hover {
     outline: transparent;
 }
 
+nav a[rel="home"]:focus,
+nav a[rel="home"]:focus:hover {
+    --nav-logo-color: var(--fl-linkColor, var(--color-green-700));
+
+    background-color: var(--fl-bgColor, var(--color-white));
+    box-shadow: 0 0 0 0.375rem var(--fl-linkColor, var(--nav-item-border)) inset;
+    color: var(--fl-linkColor, var(--nav-item-focus-color));
+    outline: transparent;
+}
+
 nav a:active,
 nav a:active:focus {
     background-color: var(--fl-linkColor, var(--nav-item-active-bg));
     box-shadow: 0 -0.75rem 0 -0.375rem var(--fl-linkColor, var(--nav-item-border)) inset;
+    color: var(--fl-bgColor, var(--nav-item-active-color));
+}
+
+nav a[rel="home"]:active,
+nav a[rel="home"]:active:focus {
+    --nav-logo-color: var(--fl-bgColor, var(--color-green-700));
+
+    background-color: var(--fl-linkColor, var(--nav-item-active-bg));
+    box-shadow: none;
     color: var(--fl-bgColor, var(--nav-item-active-color));
 }

@@ -2,7 +2,10 @@
     <h2 id="navigation" class="visually-hidden">Navigation</h2>
     <ul role="list">
         <li>
-            <a rel="home" href="/">Inclusive Design Guide</a>
+            <a rel="home" href="/">
+                {% include "../../../static/svg/idrc.svg" %}
+                Inclusive Design Guide
+            </a>
         </li>
         {% for item in params.items %}
         <li>
