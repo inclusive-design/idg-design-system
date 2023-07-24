@@ -67,8 +67,6 @@ nav a[rel="home"] {
     --nav-item-hover-bg: var(--color-green-700);
     --nav-item-hover-color: var(--color-white);
     --nav-item-active-bg: var(--color-green-300);
-    --nav-logo-color: var(--fl-linkColor, var(--color-green-700));
-    --nav-logo-hover-color: var(--fl-bgColor, var(--nav-item-hover-color));
 
     align-items: center;
     box-shadow: none;
@@ -105,8 +103,6 @@ nav a:hover {
 }
 
 nav a[rel="home"]:hover {
-    --nav-logo-color: var(--nav-logo-hover-color);
-
     background-color: var(--fl-linkColor, var(--nav-item-hover-bg));
     box-shadow: 0 -0.75rem 0 -0.375rem var(--fl-linkColor, var(--nav-item-border)) inset;
     color: var(--fl-bgColor, var(--nav-item-hover-color));
@@ -122,8 +118,6 @@ nav a:focus:hover {
 
 nav a[rel="home"]:focus,
 nav a[rel="home"]:focus:hover {
-    --nav-logo-color: var(--fl-linkColor, var(--color-green-700));
-
     background-color: var(--fl-bgColor, var(--color-white));
     box-shadow: 0 0 0 0.375rem var(--fl-linkColor, var(--nav-item-border)) inset;
     color: var(--fl-linkColor, var(--nav-item-focus-color));
@@ -139,8 +133,6 @@ nav a:active:focus {
 
 nav a[rel="home"]:active,
 nav a[rel="home"]:active:focus {
-    --nav-logo-color: var(--fl-bgColor, var(--color-green-700));
-
     background-color: var(--fl-linkColor, var(--nav-item-active-bg));
     box-shadow: none;
     color: var(--fl-bgColor, var(--nav-item-active-color));
