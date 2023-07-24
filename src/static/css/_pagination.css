@@ -1,6 +1,7 @@
 .pagination {
+    align-items: center;
     background: var(--fl-bgColor, var(--pagination-bg));
-    border-block-start: 0.2rem solid var(--fl-fgColor, var(--pagination-border-color));
+    border-block-start: 0.2rem solid var(--fl-linkColor, var(--pagination-border-color));
     color: var(--fl-fgColor, var(--pagination-color));
     display: flex;
     font-family: var(--font-sans);
@@ -27,7 +28,7 @@
                 --fl-bgColor,
                 var(--pagination-bg)
             ) 0%,
-            var(--fl-bgColor, var(--color-white)) 100%
+            var(--fl-bgColor, var(--color-blue-100)) 100%
         );
 }
 
@@ -39,7 +40,7 @@
                 --fl-bgColor,
                 var(--pagination-bg)
             ) 0%,
-            var(--fl-bgColor, var(--color-white)) 100%
+            var(--fl-bgColor, var(--color-blue-100)) 100%
         );
 }
 
@@ -49,7 +50,8 @@
 
 .pagination:focus {
     border-block-start: 0.2rem solid transparent;
-    outline: 0.2rem solid var(--fl-linkColor, var(--pagination-color));
+    box-shadow: 0 0 0 0.2rem var(--fl-linkColor, var(--pagination-color)) inset;
+    outline: none;
 }
 
 .pagination--insight {
