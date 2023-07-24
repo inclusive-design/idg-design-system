@@ -74,7 +74,7 @@
 
     /* Pagination */
     --pagination-bg: var(--color-blue-100);
-    --pagination-border-color: var(--color-blue-600);
+    --pagination-box-shadow-color: var(--color-blue-600);
     --pagination-color: var(--color-blue-600);
 
     /* @link https://utopia.fyi/space/calculator?c=
