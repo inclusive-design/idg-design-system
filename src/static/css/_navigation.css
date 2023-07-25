@@ -332,31 +332,22 @@ nav a[rel="home"]:active:focus {
         --nav-item-border: var(--color-blue-600);
         --nav-item-hover-bg: var(--color-blue-600);
         --nav-item-hover-color: var(--color-white);
-        --nav-item-active-bg: var(--color-blue-100);
-        --nav-item-active-color: var(--color-green-800);
     }
 
     nav a.--practices {
         --nav-item-hover-bg: var(--color-green-500);
         --nav-item-hover-color: var(--color-green-800);
-        --nav-item-active-bg: var(--color-green-100);
-        --nav-item-active-color: var(--color-green-800);
     }
 
     nav a.--techniques {
         --nav-item-hover-bg: var(--color-red-500);
         --nav-item-hover-color: var(--color-green-800);
-        --nav-item-active-bg: var(--color-red-100);
-        --nav-item-active-color: var(--color-green-800);
     }
 
     nav a.--activities {
         --nav-item-hover-bg: var(--color-orange-500);
         --nav-item-hover-color: var(--color-green-800);
-        --nav-item-active-bg: var(--color-orange-100);
-        --nav-item-active-color: var(--color-green-800);
     }
-
 
     nav a:hover,
     nav a:focus,
