@@ -1,8 +1,8 @@
 .pagination {
     align-items: center;
-    background: var(--fl-bgColor, var(--pagination-bg));
-    box-shadow: inset 0 0.2rem var(--fl-linkColor, var(--pagination-box-shadow-color));
-    color: var(--fl-fgColor, var(--pagination-color));
+    background: var(--fl-bgColor, var(--pagination-bg, var(--color-blue-100)));
+    box-shadow: inset 0 0.25rem var(--fl-linkColor, var(--pagination-box-shadow-color, var(--color-blue-600)));
+    color: var(--fl-fgColor, var(--pagination-color, var(--color-blue-600)));
     display: flex;
     font-family: var(--font-sans);
     font-weight: 800;
@@ -24,11 +24,8 @@
     background:
         linear-gradient(
             270deg,
-            var(
-                --fl-bgColor,
-                var(--pagination-bg)
-            ) 0%,
-            var(--fl-bgColor, var(--color-blue-100)) 100%
+            var(--fl-bgColor, var(--pagination-bg, var(--color-blue-100))),
+            transparent
         );
 }
 
@@ -36,11 +33,8 @@
     background:
         linear-gradient(
             90deg,
-            var(
-                --fl-bgColor,
-                var(--pagination-bg)
-            ) 0%,
-            var(--fl-bgColor, var(--color-blue-100)) 100%
+            var(--fl-bgColor, var(--pagination-bg, var(--color-blue-100))),
+            transparent
         );
 }
 
@@ -49,7 +43,7 @@
 }
 
 .pagination:focus {
-    box-shadow: 0 0 0 0.2rem var(--fl-linkColor, var(--pagination-box-shadow-color)) inset;
+    box-shadow: 0 0 0 0.25rem var(--fl-linkColor, var(--pagination-box-shadow-color, var(--color-blue-600))) inset;
     outline: 3px solid transparent;
 }
 
