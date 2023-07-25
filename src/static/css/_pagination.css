@@ -8,6 +8,7 @@
     font-weight: 800;
     justify-content: space-between;
     padding: var(--space-m);
+    text-decoration: none;
     width: 20rem;
 }
 
