@@ -1,0 +1,68 @@
+.pagination {
+    align-items: center;
+    background: var(--fl-bgColor, var(--pagination-bg, var(--color-blue-100)));
+    box-shadow: inset 0 0.25rem var(--fl-linkColor, var(--pagination-box-shadow-color, var(--color-blue-600)));
+    color: var(--fl-fgColor, var(--pagination-color, var(--color-blue-600)));
+    display: flex;
+    font-family: var(--font-sans);
+    font-weight: 800;
+    justify-content: space-between;
+    padding: var(--space-m);
+    text-decoration: none;
+    width: 20rem;
+}
+
+.pagination svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.pagination-previous svg {
+    transform: rotate(180deg);
+}
+
+.pagination-previous:hover {
+    background:
+        linear-gradient(
+            270deg,
+            var(--fl-bgColor, var(--pagination-bg, var(--color-blue-100))),
+            transparent
+        );
+}
+
+.pagination-next:hover {
+    background:
+        linear-gradient(
+            90deg,
+            var(--fl-bgColor, var(--pagination-bg, var(--color-blue-100))),
+            transparent
+        );
+}
+
+.pagination:active {
+    --pagination-bg: var(--color-white);
+}
+
+.pagination:focus {
+    box-shadow: 0 0 0 0.25rem var(--fl-linkColor, var(--pagination-box-shadow-color, var(--color-blue-600))) inset;
+    outline: 3px solid transparent;
+}
+
+.pagination--insight {
+    --pagination-bg: var(--color-blue-100);
+}
+
+.pagination--practice {
+    --pagination-bg: var(--color-green-100);
+    --pagination-box-shadow-color: var(--color-green-500);
+}
+
+.pagination--technique {
+    --pagination-bg: var(--color-red-100);
+    --pagination-box-shadow-color: var(--color-red-500);
+}
+
+.pagination--activity {
+    --pagination-bg: var(--color-orange-100);
+    --pagination-box-shadow-color: var(--color-orange-500);
+}
