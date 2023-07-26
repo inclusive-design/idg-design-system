@@ -2,8 +2,8 @@
     background-color: var(--fl-bgColor, var(--color-blue-100));
 }
 
-.bg-blue-200 {
-    background-color: var(--fl-bgColor, var(--color-blue-200));
+.bg-blue-300 {
+    background-color: var(--fl-bgColor, var(--color-blue-300));
 }
 
 .bg-blue-600 {

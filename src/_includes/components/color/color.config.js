@@ -3,6 +3,7 @@ module.exports = {
     context: {
         colors: [
             "blue-100",
+            "blue-300",
             "blue-600",
             "blue-700",
             "green-100",

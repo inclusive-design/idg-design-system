@@ -1,0 +1,17 @@
+<nav aria-labelledby="navigation" x-data="{open: false}">
+    <a rel="home" href="/">
+        {% include "../../../static/svg/idrc.svg" %}
+        <span>Inclusive Design Guide</span>
+    </a>
+    <button aria-expanded="false" x-bind:aria-expanded="open" @click="open = !open">{% include "../../../static/svg/close.svg" %}{% include "../../../static/svg/menu.svg" %}<span class="label">menu</span></button>
+    <div class="inner flow">
+        <h2 id="navigation">Menu</h2>
+        <ul role="list">
+            {% for item in params.items %}
+            <li>
+                <a class="--{{ item.title | slugify }}" href="#{{ item.title | slugify }}"{% if item.current %} aria-current="page"{% endif %}>{{ item.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</nav>

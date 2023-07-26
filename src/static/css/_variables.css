@@ -2,6 +2,8 @@
     /* Colors */
     --color-blue-100-hsl: 234, 100%, 96%;
     --color-blue-100: hsl(var(--color-blue-100-hsl));
+    --color-blue-300-hsl: 234, 72%, 75%;
+    --color-blue-300: hsl(var(--color-blue-300-hsl));
     --color-blue-600-hsl: 234, 62%, 51%;
     --color-blue-600: hsl(var(--color-blue-600-hsl));
     --color-blue-700-hsl: 234, 72%, 39%;
