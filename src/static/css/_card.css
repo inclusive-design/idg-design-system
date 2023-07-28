@@ -76,7 +76,7 @@
 }
 
 .card a:hover {
-    color: var(--fl-linkColor, var(--color-blue-600));
+    color: var(--fl-linkColor, var(--color-black));
 }
 
 .card a:active {
