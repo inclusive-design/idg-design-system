@@ -1,0 +1,125 @@
+.calls-to-action--insight {
+    --calls-to-action-bg: var(--color-blue-600);
+    --calls-to-action-border: var(--color-blue-700);
+    --calls-to-action-hover-bg: var(--color-blue-700);
+    --calls-to-action-hover-border:
+        linear-gradient(
+            90deg,
+            var(--fl-linkColor, var(--color-blue-600)) 0%,
+            var(--fl-linkColor, var(--color-blue-100)) 100%
+        );
+    --calls-to-action-focus-bg: var(--color-blue-100);
+    --calls-to-action-focus-border: var(--color-blue-600);
+    --calls-to-action-color: var(--color-white);
+    --calls-to-action-focus-color: var(--color-black);
+}
+
+.calls-to-action--technique {
+    --calls-to-action-bg: var(--color-red-500);
+    --calls-to-action-border: var(--color-red-600);
+    --calls-to-action-hover-bg: var(--color-red-600);
+    --calls-to-action-hover-border: linear-gradient(90deg, var(--color-red-500) 0%, var(--color-red-100) 100%);
+    --calls-to-action-focus-bg: var(--color-red-100);
+    --calls-to-action-focus-border: var(--color-red-500);
+    --calls-to-action-color: var(--color-black);
+    --calls-to-action-focus-color: var(--color-black);
+}
+
+.calls-to-action--practice {
+    --calls-to-action-bg: var(--color-green-500);
+    --calls-to-action-border: var(--color-green-600);
+    --calls-to-action-hover-bg: var(--color-green-600);
+    --calls-to-action-hover-border: linear-gradient(90deg, var(--color-green-500) 0%, var(--color-green-300) 100%);
+    --calls-to-action-focus-bg: var(--color-green-100);
+    --calls-to-action-focus-border: var(--color-green-500);
+    --calls-to-action-color: var(--color-black);
+    --calls-to-action-focus-color: var(--color-black);
+}
+
+.calls-to-action--activity {
+    --calls-to-action-bg: var(--color-orange-500);
+    --calls-to-action-border: var(--color-orange-600);
+    --calls-to-action-hover-bg: var(--color-orange-600);
+    --calls-to-action-hover-border: linear-gradient(90deg, var(--color-orange-500) 0%, var(--color-orange-100) 100%);
+    --calls-to-action-focus-bg: var(--color-orange-100);
+    --calls-to-action-focus-border: var(--color-orange-500);
+    --calls-to-action-color: var(--color-black);
+    --calls-to-action-focus-color: var(--color-black);
+}
+
+.calls-to-action {
+    background: var(--fl-bgColor, var(--calls-to-action-bg, var(--color-blue-600)));
+    border-block-start: 0.25rem solid var(--fl-linkColor, var(--calls-to-action-border, var(--color-blue-300)));
+    box-shadow:
+        inset 0.0625rem 0 var(--fl-linkColor, transparent),
+        inset -0.0625rem 0 var(--fl-linkColor, transparent),
+        inset 0 -0.0625rem var(--fl-linkColor, transparent);
+    color: var(--fl-fgColor, var(--calls-to-action-color, var(--color-white)));
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+    inline-size: 100%;
+    max-inline-size: calc(330 / 16 * 1rem);
+    padding: var(--space-m);
+    position: relative;
+}
+
+.calls-to-action .title {
+    align-items: center;
+    display: flex;
+    font-size: var(--step-1);
+    font-weight: 800;
+    gap: var(--space-xs);
+}
+
+.calls-to-action .title svg {
+    width: var(--space-m);
+}
+
+.calls-to-action .title a {
+    color: var(--fl-fgColor, var(--calls-to-action-color, --color-white));
+    text-decoration: none;
+}
+
+.calls-to-action h3 {
+    font-family: var(--font-sans);
+    font-weight: 800;
+}
+
+.calls-to-action a:active,
+.calls-to-action a:focus {
+    background-color: inherit;
+    box-shadow: none;
+    color: var(--fl-fgColor, var(--calls-to-action-focus-color, var(--color-black)));
+    outline: 0.2rem solid transparent;
+}
+
+.calls-to-action a::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.calls-to-action:hover,
+.calls-to-action:has(a:hover) {
+    background: var(--fl-bgColor, var(--calls-to-action-hover-bg, var(--color-blue-700)));
+    border-block-start: 0.25rem solid;
+    border-image: var(--calls-to-action-hover-border) 1;
+}
+
+.calls-to-action:has(a:active),
+.calls-to-action:has(a:focus) {
+    background: var(--fl-bgColor, var(--calls-to-action-focus-bg, var(--color-blue-100)));
+    border-block-start: 0.25rem solid var(--fl-linkColor, var(--calls-to-action-focus-border, var(--color-blue-600)));
+    color: var(--fl-fgColor, var(--calls-to-action-focus-color, var(--color-black)));
+}
+
+.calls-to-action:has(a:focus) {
+    box-shadow:
+        inset 0.25rem 0 var(--fl-linkColor, var(--calls-to-action-focus-border, var(--color-blue-600))),
+        inset -0.25rem 0 var(--fl-linkColor, var(--calls-to-action-focus-border, var(--color-blue-600))),
+        inset 0 -0.25rem var(--fl-linkColor, var(--calls-to-action-focus-border, var(--color-blue-600)));
+}
