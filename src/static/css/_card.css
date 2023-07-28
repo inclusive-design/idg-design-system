@@ -82,6 +82,7 @@
 .card a:active {
     background-color: inherit;
     box-shadow: none;
+    color: var(--fl-linkColor, var(--color-blue-600));
     outline: 0.2rem solid transparent;
 }
 
@@ -100,9 +101,10 @@
     top: 0;
 }
 
-.card:hover {
+.card:hover,
+.card:has(a:hover) {
     box-shadow: 0 0 0 0.0625rem var(--fl-linkColor, var(--card-border-hover)) inset;
-    color: var(--fl-linkColor);
+    color: var(--fl-linkColor, var(--color-black));
 }
 
 .card:hover .header {
@@ -121,6 +123,7 @@
     box-shadow:
         0 0 0 0.0625rem var(--fl-linkColor, var(--color-green-100)) inset,
         0 0 0 0.125rem var(--fl-linkColor, transparent) inset;
+    color: var(--fl-linkColor, var(--color-black));
 }
 
 .card:has(a:active) .header,
@@ -133,7 +136,7 @@
         0 0 0 0.125rem var(--fl-linkColor, var(--card-focus-border)) inset,
         0 0 0 0.125rem var(--fl-bgColor, transparent),
         0 0 0 0.25rem var(--fl-linkColor, transparent);
-    color: var(--fl-linkColor);
+    color: var(--fl-linkColor, var(--color-black));
 }
 
 .card:focus-within .header {
