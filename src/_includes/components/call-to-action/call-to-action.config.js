@@ -1,8 +1,8 @@
 module.exports = {
-    title: "Calls To Action",
+    title: "Call To Action",
     context: {
-        header: "calls to action",
-        body: "calls to action"
+        header: "call to action",
+        body: "call to action"
     },
     variants: [
         {
