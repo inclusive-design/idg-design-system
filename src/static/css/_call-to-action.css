@@ -126,16 +126,19 @@
 }
 
 .call-to-action:has(a:active),
-.call-to-action:focus-within {
+.call-to-action:focus-within:has(a:active) {
     background: var(--fl-bgColor, var(--call-to-action-focus-bg));
     border-block-start: 0.25rem solid var(--fl-linkColor, var(--call-to-action-focus-border));
     color: var(--fl-linkColor, var(--call-to-action-focus-color));
 }
 
 .call-to-action:focus-within {
+    background: var(--fl-bgColor, var(--call-to-action-focus-bg));
+    border-block-start: 0.25rem solid var(--fl-linkColor, var(--call-to-action-focus-border));
     border-image: unset;
     box-shadow:
         inset 0.25rem 0 var(--fl-linkColor, var(--call-to-action-focus-border)),
         inset -0.25rem 0 var(--fl-linkColor, var(--call-to-action-focus-border)),
         inset 0 -0.25rem var(--fl-linkColor, var(--call-to-action-focus-border));
+    color: var(--fl-linkColor, var(--call-to-action-focus-color));
 }
