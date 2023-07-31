@@ -1,6 +1,6 @@
 /* Reset */
 body {
-    color: var(--fl-fgColor, var(--color-green-700));
+    color: var(--fl-fgColor, var(--color-green-800));
     font-family: var(--font-system, sans-serif);
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
