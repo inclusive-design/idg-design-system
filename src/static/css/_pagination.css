@@ -13,8 +13,8 @@
 }
 
 .pagination svg {
-    height: 2rem;
-    width: 2rem;
+    height: auto;
+    width: 1.125rem;
 }
 
 .pagination-previous svg {
