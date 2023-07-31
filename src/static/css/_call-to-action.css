@@ -129,6 +129,7 @@
 .call-to-action:focus-within:has(a:active) {
     background: var(--fl-bgColor, var(--call-to-action-focus-bg));
     border-block-start: 0.25rem solid var(--fl-linkColor, var(--call-to-action-focus-border));
+    box-shadow: unset;
     color: var(--fl-linkColor, var(--call-to-action-focus-color));
 }
 
