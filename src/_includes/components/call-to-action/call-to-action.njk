@@ -1,0 +1,7 @@
+<div class="call-to-action call-to-action--{{ params.variantClass }}">
+    <div class="title">
+        <a aria-describedby="call-to-action-{{ params.header | slugify }}" href="#"> {{ params.header }}</a>
+        {% include "../../../static/svg/arrow.svg" %}
+    </div>
+    <p id="call-to-action-{{ params.header | lower | replace(" ", "-") }}"> {{ params.body }} </p>
+</div>

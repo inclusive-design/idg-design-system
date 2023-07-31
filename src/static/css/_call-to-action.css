@@ -1,0 +1,145 @@
+.call-to-action,
+.call-to-action--insight {
+    --call-to-action-bg: var(--color-blue-600);
+    --call-to-action-border: var(--color-blue-700);
+    --call-to-action-hover-bg: var(--color-blue-700);
+    --call-to-action-hover-border:
+        linear-gradient(
+            90deg,
+            var(--fl-linkColor, var(--color-blue-600)) 0%,
+            var(--fl-linkColor, var(--color-blue-100)) 100%
+        );
+    --call-to-action-focus-bg: var(--color-blue-100);
+    --call-to-action-focus-border: var(--color-blue-600);
+    --call-to-action-color: var(--color-white);
+    --call-to-action-focus-color: var(--color-black);
+}
+
+.call-to-action--technique {
+    --call-to-action-bg: var(--color-red-500);
+    --call-to-action-border: var(--color-red-600);
+    --call-to-action-hover-bg: var(--color-red-600);
+    --call-to-action-hover-border:
+        linear-gradient(
+            90deg,
+            var(--fl-linkColor, var(--color-red-500)) 0%,
+            var(--fl-linkColor, var(--color-red-100)) 100%
+        );
+    --call-to-action-focus-bg: var(--color-red-100);
+    --call-to-action-focus-border: var(--color-red-500);
+    --call-to-action-color: var(--color-black);
+    --call-to-action-focus-color: var(--color-black);
+}
+
+.call-to-action--practice {
+    --call-to-action-bg: var(--color-green-500);
+    --call-to-action-border: var(--color-green-600);
+    --call-to-action-hover-bg: var(--color-green-600);
+    --call-to-action-hover-border:
+        linear-gradient(
+            90deg,
+            var(--fl-linkColor, var(--color-green-500)) 0%,
+            var(--fl-linkColor, var(--color-green-300)) 100%
+        );
+    --call-to-action-focus-bg: var(--color-green-100);
+    --call-to-action-focus-border: var(--color-green-500);
+    --call-to-action-color: var(--color-black);
+    --call-to-action-focus-color: var(--color-black);
+}
+
+.call-to-action--activity {
+    --call-to-action-bg: var(--color-orange-500);
+    --call-to-action-border: var(--color-orange-600);
+    --call-to-action-hover-bg: var(--color-orange-600);
+    --call-to-action-hover-border:
+        linear-gradient(
+            90deg,
+            var(--fl-linkColor, var(--color-orange-500)) 0%,
+            var(--fl-linkColor, var(--color-orange-100)) 100%
+        );
+    --call-to-action-focus-bg: var(--color-orange-100);
+    --call-to-action-focus-border: var(--color-orange-500);
+    --call-to-action-color: var(--color-black);
+    --call-to-action-focus-color: var(--color-black);
+}
+
+.call-to-action {
+    background: var(--fl-bgColor, var(--call-to-action-bg));
+    border-block-start: 0.25rem solid var(--fl-linkColor, var(--call-to-action-border));
+    box-shadow:
+        inset 0.0625rem 0 var(--fl-linkColor, transparent),
+        inset -0.0625rem 0 var(--fl-linkColor, transparent),
+        inset 0 -0.0625rem var(--fl-linkColor, transparent);
+    color: var(--fl-linkColor, var(--call-to-action-color));
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s);
+    inline-size: 100%;
+    max-inline-size: calc(330 / 16 * 1rem);
+    padding: var(--space-m);
+    position: relative;
+}
+
+.call-to-action .title {
+    align-items: center;
+    display: flex;
+    font-size: var(--step-1);
+    font-weight: 800;
+    gap: var(--space-xs);
+}
+
+.call-to-action .title svg {
+    width: var(--space-m);
+}
+
+.call-to-action .title a {
+    color: var(--fl-linkColor, var(--call-to-action-color));
+    text-decoration: none;
+}
+
+.call-to-action h3 {
+    font-family: var(--font-sans);
+    font-weight: 800;
+}
+
+.call-to-action a:active,
+.call-to-action a:focus {
+    background-color: inherit;
+    box-shadow: none;
+    color: var(--fl-linkColor, var(--call-to-action-focus-color));
+    outline: 0.2rem solid transparent;
+}
+
+.call-to-action a::after {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.call-to-action:hover {
+    background: var(--fl-bgColor, var(--call-to-action-hover-bg));
+    border-block-start: 0.25rem solid;
+    border-image: var(--call-to-action-hover-border) 1;
+}
+
+.call-to-action:has(a:active),
+.call-to-action:focus-within:has(a:active) {
+    background: var(--fl-bgColor, var(--call-to-action-focus-bg));
+    border-block-start: 0.25rem solid var(--fl-linkColor, var(--call-to-action-focus-border));
+    box-shadow: unset;
+    color: var(--fl-linkColor, var(--call-to-action-focus-color));
+}
+
+.call-to-action:focus-within {
+    background: var(--fl-bgColor, var(--call-to-action-focus-bg));
+    border-block-start: 0.25rem solid var(--fl-linkColor, var(--call-to-action-focus-border));
+    border-image: unset;
+    box-shadow:
+        inset 0.25rem 0 var(--fl-linkColor, var(--call-to-action-focus-border)),
+        inset -0.25rem 0 var(--fl-linkColor, var(--call-to-action-focus-border)),
+        inset 0 -0.25rem var(--fl-linkColor, var(--call-to-action-focus-border));
+    color: var(--fl-linkColor, var(--call-to-action-focus-color));
+}
