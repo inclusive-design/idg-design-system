@@ -19,7 +19,12 @@
     --call-to-action-bg: var(--color-red-500);
     --call-to-action-border: var(--color-red-600);
     --call-to-action-hover-bg: var(--color-red-600);
-    --call-to-action-hover-border: linear-gradient(90deg, var(--color-red-500) 0%, var(--color-red-100) 100%);
+    --call-to-action-hover-border:
+        linear-gradient(
+            90deg,
+            var(--fl-linkColor, var(--color-red-500)) 0%,
+            var(--fl-linkColor, var(--color-red-100)) 100%
+        );
     --call-to-action-focus-bg: var(--color-red-100);
     --call-to-action-focus-border: var(--color-red-500);
     --call-to-action-color: var(--color-black);
@@ -30,7 +35,12 @@
     --call-to-action-bg: var(--color-green-500);
     --call-to-action-border: var(--color-green-600);
     --call-to-action-hover-bg: var(--color-green-600);
-    --call-to-action-hover-border: linear-gradient(90deg, var(--color-green-500) 0%, var(--color-green-300) 100%);
+    --call-to-action-hover-border:
+        linear-gradient(
+            90deg,
+            var(--fl-linkColor, var(--color-green-500)) 0%,
+            var(--fl-linkColor, var(--color-green-300)) 100%
+        );
     --call-to-action-focus-bg: var(--color-green-100);
     --call-to-action-focus-border: var(--color-green-500);
     --call-to-action-color: var(--color-black);
@@ -41,7 +51,12 @@
     --call-to-action-bg: var(--color-orange-500);
     --call-to-action-border: var(--color-orange-600);
     --call-to-action-hover-bg: var(--color-orange-600);
-    --call-to-action-hover-border: linear-gradient(90deg, var(--color-orange-500) 0%, var(--color-orange-100) 100%);
+    --call-to-action-hover-border:
+        linear-gradient(
+            90deg,
+            var(--fl-linkColor, var(--color-orange-500)) 0%,
+            var(--fl-linkColor, var(--color-orange-100)) 100%
+        );
     --call-to-action-focus-bg: var(--color-orange-100);
     --call-to-action-focus-border: var(--color-orange-500);
     --call-to-action-color: var(--color-black);
@@ -55,7 +70,7 @@
         inset 0.0625rem 0 var(--fl-linkColor, transparent),
         inset -0.0625rem 0 var(--fl-linkColor, transparent),
         inset 0 -0.0625rem var(--fl-linkColor, transparent);
-    color: var(--fl-fgColor, var(--call-to-action-color));
+    color: var(--fl-linkColor, var(--call-to-action-color));
     display: flex;
     flex-direction: column;
     gap: var(--space-s);
@@ -78,7 +93,7 @@
 }
 
 .call-to-action .title a {
-    color: var(--fl-fgColor, var(--call-to-action-color));
+    color: var(--fl-linkColor, var(--call-to-action-color));
     text-decoration: none;
 }
 
@@ -91,7 +106,7 @@
 .call-to-action a:focus {
     background-color: inherit;
     box-shadow: none;
-    color: var(--fl-fgColor, var(--call-to-action-focus-color));
+    color: var(--fl-linkColor, var(--call-to-action-focus-color));
     outline: 0.2rem solid transparent;
 }
 
@@ -114,7 +129,7 @@
 .call-to-action:focus-within {
     background: var(--fl-bgColor, var(--call-to-action-focus-bg));
     border-block-start: 0.25rem solid var(--fl-linkColor, var(--call-to-action-focus-border));
-    color: var(--fl-fgColor, var(--call-to-action-focus-color));
+    color: var(--fl-linkColor, var(--call-to-action-focus-color));
 }
 
 .call-to-action:focus-within {
