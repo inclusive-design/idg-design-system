@@ -39,8 +39,11 @@
         );
 }
 
-.pagination:active {
-    --pagination-bg: var(--color-white);
+.pagination:active,
+.pagination:active:focus {
+    --pagination-bg: var(--fl-bgColor, var(--color-white));
+
+    box-shadow: inset 0 0.25rem var(--fl-linkColor, var(--pagination-box-shadow-color, var(--color-blue-600)));
 }
 
 .pagination:focus {
