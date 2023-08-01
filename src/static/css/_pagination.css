@@ -58,8 +58,7 @@
 
 .pagination:active,
 .pagination:active:focus {
-    --pagination-bg: var(--fl-bgColor, var(--color-white));
-
+    background: var(--fl-bgColor, var(--color-white));
     box-shadow: inset 0 0.25rem var(--fl-linkColor, var(--pagination-box-shadow-color, var(--color-blue-600)));
     color: var(--fl-linkColor, var(--pagination-color, var(--color-blue-600)));
 }
