@@ -73,10 +73,10 @@
     color: var(--fl-linkColor, var(--call-to-action-color));
     display: flex;
     flex-direction: column;
-    gap: var(--space-s);
-    inline-size: 100%;
-    max-inline-size: calc(330 / 16 * 1rem);
-    padding: var(--space-m);
+    gap: var(--space-xs);
+    max-inline-size: 100%;
+    padding-block: calc(var(--space-xl) + var(--space-xs));
+    padding-inline: var(--space-xl);
     position: relative;
 }
 
@@ -86,6 +86,7 @@
     font-size: var(--step-1);
     font-weight: 800;
     gap: var(--space-xs);
+    line-height: 1;
 }
 
 .call-to-action .title svg {
