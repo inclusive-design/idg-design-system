@@ -1,5 +1,8 @@
 # Inclusive Design Guide Design System
 
+[![BSD 3-Clause License](https://badgen.net/github/license/inclusive-design/idg-design-system)](https://github.com/inclusive-design/idg-design-system/)
+[![Latest Release](https://badgen.net/github/release/inclusive-design/idg-design-system)](https://github.com/inclusive-design/idg-design-system/releases/latest)
+
 To run the design system microsite in local development mode:
 
 ```bash
