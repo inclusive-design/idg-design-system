@@ -1,4 +1,4 @@
-a.pagination {
+.pagination {
     align-items: center;
     background: var(--fl-bgColor, var(--pagination-bg, var(--color-blue-100)));
     box-shadow:
@@ -14,40 +14,40 @@ a.pagination {
     width: 20rem;
 }
 
-a.pagination--practice {
+.pagination--practice {
     --pagination-bg: var(--color-green-100);
     --pagination-box-shadow-color: var(--color-green-500);
 }
 
-a.pagination--technique {
+.pagination--technique {
     --pagination-bg: var(--color-red-100);
     --pagination-box-shadow-color: var(--color-red-500);
 }
 
-a.pagination--activity {
+.pagination--activity {
     --pagination-bg: var(--color-orange-100);
     --pagination-box-shadow-color: var(--color-orange-500);
 }
 
-a.pagination svg {
+.pagination svg {
     height: auto;
     width: 1.125rem;
 }
 
-a.pagination-previous svg {
+.pagination-previous svg {
     transform: rotate(180deg);
 }
 
-a.pagination-previous:hover {
+.pagination-previous:hover {
     background:
         linear-gradient(
             270deg,
             var(--fl-bgColor, var(--pagination-bg, var(--color-blue-100))),
-            transparenta
+            transparent
         );
 }
 
-a.pagination-next:hover {
+.pagination-next:hover {
     background:
         linear-gradient(
             90deg,
@@ -56,15 +56,14 @@ a.pagination-next:hover {
         );
 }
 
-a.pagination:active,
-a.pagination:active:focus {
-    --pagination-bg: var(--fl-bgColor, var(--color-white));
-
+.pagination:active,
+.pagination:active:focus {
+    background: var(--fl-bgColor, var(--color-white));
     box-shadow: inset 0 0.25rem var(--fl-linkColor, var(--pagination-box-shadow-color, var(--color-blue-600)));
     color: var(--fl-linkColor, var(--pagination-color, var(--color-blue-600)));
 }
 
-a.pagination:focus {
+.pagination:focus {
     box-shadow: 0 0 0 0.25rem var(--fl-linkColor, var(--pagination-box-shadow-color, var(--color-blue-600))) inset;
     outline: 3px solid transparent;
 }
