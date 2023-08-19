@@ -39,3 +39,8 @@ a:focus:active {
     --link-focus-color: var(--fl-linkColor, var(--color-green-500));
     --link-hover-color: var(--fl-linkColor, var(--color-green-500));
 }
+
+.subhead a {
+    font-family: var(--font-sans);
+    font-weight: 600;
+}

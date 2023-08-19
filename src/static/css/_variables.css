@@ -164,25 +164,32 @@
             ((var(--f-0-min) / 16) * 1rem) + (var(--f-0-max) - var(--f-0-min)) *
             var(--fluid-bp)
         );
-    --f-1-min: 28;
-    --f-1-max: 32;
+    --f-1-min: 18;
+    --f-1-max: 20;
     --step-1:
         calc(
             ((var(--f-1-min) / 16) * 1rem) + (var(--f-1-max) - var(--f-1-min)) *
             var(--fluid-bp)
         );
-    --f-2-min: 36;
-    --f-2-max: 52;
+    --f-2-min: 28;
+    --f-2-max: 32;
     --step-2:
         calc(
             ((var(--f-2-min) / 16) * 1rem) + (var(--f-2-max) - var(--f-2-min)) *
             var(--fluid-bp)
         );
-    --f-3-min: 48;
-    --f-3-max: 88;
+    --f-3-min: 36;
+    --f-3-max: 52;
     --step-3:
         calc(
             ((var(--f-3-min) / 16) * 1rem) + (var(--f-3-max) - var(--f-3-min)) *
+            var(--fluid-bp)
+        );
+    --f-4-min: 48;
+    --f-4-max: 88;
+    --step-4:
+        calc(
+            ((var(--f-4-min) / 16) * 1rem) + (var(--f-4-max) - var(--f-4-min)) *
             var(--fluid-bp)
         );
 }
