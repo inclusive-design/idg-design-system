@@ -34,6 +34,14 @@ module.exports = {
             }
         },
         {
+            title: "Subhead",
+            context: {
+                level: "p",
+                levelClass: "subhead",
+                text: "The basic theory and practice of Inclusive Design"
+            }
+        },
+        {
             title: "Paragraph",
             context: {
                 level: "p",

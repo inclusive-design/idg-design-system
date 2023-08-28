@@ -17,6 +17,13 @@ module.exports = {
                 customBg: "green-500",
                 text: "Previous"
             }
+        },
+        {
+            title: "Subhead",
+            context: {
+                customClass: "subhead",
+                text: "Inclusive Design Research Centre"
+            }
         }
     ]
 };
