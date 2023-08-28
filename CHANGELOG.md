@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/inclusive-design/idg-design-system/compare/v1.0.0...v1.1.0) (2023-08-28)
+
+
+### Features
+
+* add subhead link and typography variants (resolves [#51](https://github.com/inclusive-design/idg-design-system/issues/51)) ([#52](https://github.com/inclusive-design/idg-design-system/issues/52)) ([439e09f](https://github.com/inclusive-design/idg-design-system/commit/439e09f23d51ea5df197807ce282c322918d7f4b))
+
 ## 1.0.0 (2023-08-01)
 
 
