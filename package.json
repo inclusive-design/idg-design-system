@@ -38,7 +38,7 @@
     "chalk": "4.1.2",
     "eslint-config-fluid": "2.1.1",
     "husky": "8.0.3",
-    "lightningcss": "1.21.5",
+    "lightningcss": "1.21.7",
     "lint-staged": "13.2.3",
     "markdownlint-cli2": "0.8.1",
     "markdownlint-config-fluid": "0.1.5",
