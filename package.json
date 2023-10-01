@@ -32,7 +32,7 @@
     "require-glob": "4.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.7.1",
+    "@commitlint/cli": "17.7.2",
     "@commitlint/config-conventional": "17.7.0",
     "browserslist": "4.21.10",
     "chalk": "4.1.2",
